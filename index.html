@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Квитки Укрзалізниця</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Сервіс купівлі квитків Укрзалізниці</h1>
+    <form id="ticketForm">
+      <label>Звідки:
+        <input type="text" id="from" placeholder="Київ" required />
+      </label>
+      <label>Куди:
+        <input type="text" id="to" placeholder="Львів" required />
+      </label>
+      <label>Дата поїздки:
+        <input type="date" id="date" required />
+      </label>
+      <button type="submit">Знайти квитки</button>
+    </form>
+
+    <div id="results" class="hidden">
+      <h2>Доступні квитки:</h2>
+      <ul id="ticketList"></ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
