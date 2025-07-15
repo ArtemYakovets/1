@@ -1,4 +1,4 @@
-
+// Пошук квитків
 document.getElementById('ticketForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -22,4 +22,18 @@ document.getElementById('ticketForm').addEventListener('submit', function (e) {
   });
 
   document.getElementById('results').classList.remove('hidden');
+});
+
+// Навігація між вкладками
+document.querySelectorAll('.nav-tabs li').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.nav-tabs li').forEach(el => el.classList.remove('active'));
+    tab.classList.add('active');
+
+    const target = tab.getAttribute('data-tab');
+    document.querySelectorAll('.tab-content').forEach(section => {
+      section.classList.remove('active');
+    });
+    document.getElementById(target).classList.add('active');
+  });
 });
