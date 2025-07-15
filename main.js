@@ -58,7 +58,7 @@ document.querySelectorAll('.nav-tabs li').forEach(tab => {
 
 // Погода (OpenWeatherMap)
 function fetchWeather(city) {
-  const apiKey = 'YOUR_API_KEY'; // ВСТАВ СВІЙ API КЛЮЧ
+  const apiKey = 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}'; 
   const weatherBox = document.getElementById('weather');
   weatherBox.innerHTML = 'Завантаження погоди...';
 
