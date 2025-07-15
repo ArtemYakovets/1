@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- Шапка сайту -->
+  
   <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: white; border-bottom: 1px solid #ddd;">
     <div style="display: flex; align-items: center; gap: 10px;">
       <img src="https://i.lb.ua/017/36/67d7f483b947a.png" alt="Укрзалізниця логотип" style="height: 50px;" />
@@ -25,11 +25,12 @@
     </nav>
   </header>
 
+ 
   <main>
-    <!-- Головна -->
     <section id="home" class="tab-content active">
       <div class="container">
         <h1>Сервіс купівлі квитків Укрзалізниці</h1>
+
         <form id="ticketForm">
           <label>Звідки:
             <input type="text" id="from" placeholder="Київ" required />
@@ -47,10 +48,24 @@
           <h2>Доступні квитки:</h2>
           <ul id="ticketList"></ul>
         </div>
+
+        
+        <section style="margin-top: 40px;">
+          <h2>Чому обирають Укрзалізницю?</h2>
+          <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
+            <li>🚄 Швидко та зручно</li>
+            <li>💰 Доступні ціни на будь-який бюджет</li>
+            <li>📍 Широка мережа маршрутів по Україні</li>
+            <li>🧾 Онлайн-бронювання без черг</li>
+          </ul>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/UZ_Pesa_BTR-3_2021.jpg/1280px-UZ_Pesa_BTR-3_2021.jpg"
+               alt="Потяг Укрзалізниці"
+               style="max-width: 100%; margin-top: 20px; border-radius: 8px; border: 1px solid #ccc;" />
+        </section>
       </div>
     </section>
 
-    <!-- Розклад -->
+
     <section id="schedule" class="tab-content">
       <div class="container">
         <h2>Розклад потягів</h2>
@@ -64,7 +79,6 @@
       </div>
     </section>
 
-    <!-- Ціни -->
     <section id="prices" class="tab-content">
       <div class="container">
         <h2>Ціни</h2>
@@ -80,7 +94,6 @@
       </div>
     </section>
 
-    <!-- Карта маршрутів -->
     <section id="map" class="tab-content">
       <div class="container">
         <h2>Карта маршрутів Укрзалізниці</h2>
@@ -90,7 +103,6 @@
       </div>
     </section>
 
-    <!-- Контакти -->
     <section id="contacts" class="tab-content">
       <div class="container">
         <h2>Контакти</h2>
@@ -99,6 +111,16 @@
       </div>
     </section>
   </main>
+
+  <!-- Футер -->
+  <footer style="background-color: #f2f2f2; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em;">
+    <p>&copy; 2025 Укрзалізниця. Усі права захищено.</p>
+    <p><a href="#">Політика конфіденційності</a> | <a href="#">Умови користування</a></p>
+    <p>Слідкуйте за нами: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
 
   <script src="main.js"></script>
 </body>
