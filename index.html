@@ -7,21 +7,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="logo">Укрзалізниця</div>
-    <nav>
-  <ul class="nav-tabs">
-    <li data-tab="home" class="active">Головна</li>
-    <li data-tab="schedule">Розклад</li>
-    <li data-tab="prices">Ціни</li>
-    <li data-tab="map">Карта маршрутів</li>
-    <li data-tab="contacts">Контакти</li>
-  </ul>
-</nav>
 
+  <!-- Шапка сайту -->
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: white; border-bottom: 1px solid #ddd;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="https://i.lb.ua/017/36/67d7f483b947a.png" alt="Укрзалізниця логотип" style="height: 50px;" />
+      <div class="logo" style="font-size: 1.5em; font-weight: bold;">Укрзалізниця</div>
+    </div>
+    <nav>
+      <ul class="nav-tabs">
+        <li data-tab="home" class="active">Головна</li>
+        <li data-tab="schedule">Розклад</li>
+        <li data-tab="prices">Ціни</li>
+        <li data-tab="map">Карта маршрутів</li>
+        <li data-tab="contacts">Контакти</li>
+      </ul>
+    </nav>
   </header>
 
   <main>
+    <!-- Головна -->
     <section id="home" class="tab-content active">
       <div class="container">
         <h1>Сервіс купівлі квитків Укрзалізниці</h1>
@@ -45,45 +50,47 @@
       </div>
     </section>
 
+    <!-- Розклад -->
     <section id="schedule" class="tab-content">
-  <div class="container">
-    <h2>Розклад потягів</h2>
-    <ul>
-      <li>Київ – Львів: 08:30, 13:45, 18:10</li>
-      <li>Київ – Одеса: 06:20, 12:00, 19:50</li>
-      <li>Львів – Харків: 07:15, 14:40</li>
-      <li>Дніпро – Ужгород: 09:00, 21:00</li>
-      <li>Харків – Івано-Франківськ: 10:25, 17:10</li>
-    </ul>
-  </div>
-</section>
+      <div class="container">
+        <h2>Розклад потягів</h2>
+        <ul>
+          <li>Київ – Львів: 08:30, 13:45, 18:10</li>
+          <li>Київ – Одеса: 06:20, 12:00, 19:50</li>
+          <li>Львів – Харків: 07:15, 14:40</li>
+          <li>Дніпро – Ужгород: 09:00, 21:00</li>
+          <li>Харків – Івано-Франківськ: 10:25, 17:10</li>
+        </ul>
+      </div>
+    </section>
 
-
+    <!-- Ціни -->
     <section id="prices" class="tab-content">
-  <div class="container">
-    <h2>Ціни</h2>
-    <ul>
-      <li>Київ – Львів: від 350 грн</li>
-      <li>Київ – Одеса: від 400 грн</li>
-      <li>Львів – Харків: від 450 грн</li>
-      <li>Харків – Ужгород: від 500 грн</li>
-      <li>Івано-Франківськ – Київ: від 370 грн</li>
-      <li>Одеса – Дніпро: від 390 грн</li>
-      <li>Херсон – Львів: від 460 грн</li>
-    </ul>
-  </div>
-</section>
+      <div class="container">
+        <h2>Ціни</h2>
+        <ul>
+          <li>Київ – Львів: від 350 грн</li>
+          <li>Київ – Одеса: від 400 грн</li>
+          <li>Львів – Харків: від 450 грн</li>
+          <li>Харків – Ужгород: від 500 грн</li>
+          <li>Івано-Франківськ – Київ: від 370 грн</li>
+          <li>Одеса – Дніпро: від 390 грн</li>
+          <li>Херсон – Львів: від 460 грн</li>
+        </ul>
+      </div>
+    </section>
 
+    <!-- Карта маршрутів -->
     <section id="map" class="tab-content">
-  <div class="container">
-    <h2>Карта маршрутів Укрзалізниці</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D0%B0%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%96.pdf/page1-2479px-%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D0%B0%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%96.pdf.jpg" 
-         alt="Карта маршрутів" 
-         style="max-width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
-  </div>
-</section>
+      <div class="container">
+        <h2>Карта маршрутів Укрзалізниці</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D0%B0%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%96.pdf/page1-2479px-%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D0%B0%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%96.pdf.jpg"
+             alt="Карта маршрутів"
+             style="max-width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
+      </div>
+    </section>
 
-
+    <!-- Контакти -->
     <section id="contacts" class="tab-content">
       <div class="container">
         <h2>Контакти</h2>
