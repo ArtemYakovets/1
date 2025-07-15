@@ -5,71 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Квитки Укрзалізниця</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- для іконок -->
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <img src="https://i.lb.ua/017/36/67d7f483b947a.png" alt="Логотип" style="height: 40px; vertical-align: middle;">
-    <span>Укрзалізниця</span>
-  </div>
-  <nav>
-    <ul class="nav-tabs">
-      <li data-tab="home" class="active"><i class="fas fa-train"></i> Головна</li>
-      <li data-tab="schedule">Розклад</li>
-      <li data-tab="prices">Ціни</li>
-      <li data-tab="map">Карта маршрутів</li>
-      <li data-tab="contacts">Контакти</li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section id="home" class="tab-content active fade-in">
-    <div class="container">
-      <h1>Сервіс купівлі квитків Укрзалізниці</h1>
-      <form id="ticketForm">
-        <label>Звідки:
-          <input type="text" id="from" placeholder="Київ" required />
-        </label>
-        <label>Куди:
-          <input type="text" id="to" placeholder="Львів" required />
-        </label>
-        <label>Дата поїздки:
-          <input type="date" id="date" required />
-        </label>
-        <label>Клас вагона:
-          <select id="class">
-            <option value="Економ">Економ</option>
-            <option value="Купе">Купе</option>
-            <option value="Люкс">Люкс</option>
-          </select>
-        </label>
-        <button type="submit">Знайти квитки</button>
-      </form>
-
-      <div id="results" class="hidden">
-        <h2>Доступні квитки:</h2>
-        <ul id="ticketList"></ul>
-      </div>
-
-      <div id="weather" class="weather-box"></div>
+  
+  <header style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background-color: white; border-bottom: 1px solid #ddd;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="https://i.lb.ua/017/36/67d7f483b947a.png" alt="Укрзалізниця логотип" style="height: 50px;" />
+      <div class="logo" style="font-size: 1.5em; font-weight: bold;">Укрзалізниця</div>
     </div>
-  </section>
+    <nav>
+      <ul class="nav-tabs">
+        <li data-tab="home" class="active">Головна</li>
+        <li data-tab="schedule">Розклад</li>
+        <li data-tab="prices">Ціни</li>
+        <li data-tab="map">Карта маршрутів</li>
+        <li data-tab="contacts">Контакти</li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- інші вкладки тут залишаються -->
-</main>
+ 
+  <main>
+    <section id="home" class="tab-content active">
+      <div class="container">
+        <h1>Сервіс купівлі квитків Укрзалізниці</h1>
 
-<!-- Модальне вікно -->
-<div id="confirmModal" class="modal hidden">
-  <div class="modal-content">
-    <p id="confirmText"></p>
-    <button id="confirmYes">Підтвердити</button>
-    <button id="confirmNo">Скасувати</button>
-  </div>
-</div>
+        <form id="ticketForm">
+          <label>Звідки:
+            <input type="text" id="from" placeholder="Київ" required />
+          </label>
+          <label>Куди:
+            <input type="text" id="to" placeholder="Львів" required />
+          </label>
+          <label>Дата поїздки:
+            <input type="date" id="date" required />
+          </label>
+          <button type="submit">Знайти квитки</button>
+        </form>
 
-<script src="main.js"></script>
+        <div id="results" class="hidden">
+          <h2>Доступні квитки:</h2>
+          <ul id="ticketList"></ul>
+        </div>
+
+        
+        <section style="margin-top: 40px;">
+          <h2>Чому обирають Укрзалізницю?</h2>
+          <ul style="list-style: none; padding-left: 0; font-size: 1.1em;">
+            <li>🚄 Швидко та зручно</li>
+            <li>💰 Доступні ціни на будь-який бюджет</li>
+            <li>📍 Широка мережа маршрутів по Україні</li>
+            <li>🧾 Онлайн-бронювання без черг</li>
+          </ul>
+          <img src="https://zmina.info/wp-content/uploads/2023/09/upload-a638dcff-ddee-43d0-9923-ab90748adc54.jpg"
+               style="max-width: 100%; margin-top: 20px; border-radius: 8px; border: 1px solid #ccc;" />
+        </section>
+      </div>
+    </section>
+
+
+    <section id="schedule" class="tab-content">
+      <div class="container">
+        <h2>Розклад потягів</h2>
+        <ul>
+          <li>Київ – Львів: 08:30, 13:45, 18:10</li>
+          <li>Київ – Одеса: 06:20, 12:00, 19:50</li>
+          <li>Львів – Харків: 07:15, 14:40</li>
+          <li>Дніпро – Ужгород: 09:00, 21:00</li>
+          <li>Харків – Івано-Франківськ: 10:25, 17:10</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="prices" class="tab-content">
+      <div class="container">
+        <h2>Ціни</h2>
+        <ul>
+          <li>Київ – Львів: від 350 грн</li>
+          <li>Київ – Одеса: від 400 грн</li>
+          <li>Львів – Харків: від 450 грн</li>
+          <li>Харків – Ужгород: від 500 грн</li>
+          <li>Івано-Франківськ – Київ: від 370 грн</li>
+          <li>Одеса – Дніпро: від 390 грн</li>
+          <li>Херсон – Львів: від 460 грн</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="map" class="tab-content">
+      <div class="container">
+        <h2>Карта маршрутів Укрзалізниці</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D0%B0%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%96.pdf/page1-2479px-%D0%A1%D1%85%D0%B5%D0%BC%D0%B0_%D0%BF%D0%B0%D1%81%D0%B0%D0%B6%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%81%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%BD%D1%8F_%D0%A3%D0%BA%D1%80%D0%B7%D0%B0%D0%BB%D1%96%D0%B7%D0%BD%D0%B8%D1%86%D1%96.pdf.jpg"
+             alt="Карта маршрутів"
+             style="max-width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
+      </div>
+    </section>
+
+    <section id="contacts" class="tab-content">
+      <div class="container">
+        <h2>Контакти</h2>
+        <p>Гаряча лінія: 0 800 50 31 11</p>
+        <p>Email: support@uz.gov.ua</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer style="background-color: #f2f2f2; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em;">
+    <p>&copy; 2025 Укрзалізниця. Усі права захищено.</p>
+    <p><a href="#">Політика конфіденційності</a> | <a href="#">Умови користування</a></p>
+    <p>Слідкуйте за нами: 
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
