@@ -10,13 +10,15 @@
   <header>
     <div class="logo">Укрзалізниця</div>
     <nav>
-      <ul class="nav-tabs">
-        <li data-tab="home" class="active">Головна</li>
-        <li data-tab="schedule">Розклад</li>
-        <li data-tab="prices">Ціни</li>
-        <li data-tab="contacts">Контакти</li>
-      </ul>
-    </nav>
+  <ul class="nav-tabs">
+    <li data-tab="home" class="active">Головна</li>
+    <li data-tab="schedule">Розклад</li>
+    <li data-tab="prices">Ціни</li>
+    <li data-tab="map">Карта маршрутів</li>
+    <li data-tab="contacts">Контакти</li>
+  </ul>
+</nav>
+
   </header>
 
   <main>
@@ -44,22 +46,43 @@
     </section>
 
     <section id="schedule" class="tab-content">
-      <div class="container">
-        <h2>Розклад потягів</h2>
-        <p>Приклад: Київ – Львів: 08:30, 13:45, 18:10 щодня.</p>
-      </div>
-    </section>
+  <div class="container">
+    <h2>Розклад потягів</h2>
+    <ul>
+      <li>Київ – Львів: 08:30, 13:45, 18:10</li>
+      <li>Київ – Одеса: 06:20, 12:00, 19:50</li>
+      <li>Львів – Харків: 07:15, 14:40</li>
+      <li>Дніпро – Ужгород: 09:00, 21:00</li>
+      <li>Харків – Івано-Франківськ: 10:25, 17:10</li>
+    </ul>
+  </div>
+</section>
+
 
     <section id="prices" class="tab-content">
-      <div class="container">
-        <h2>Ціни</h2>
-        <ul>
-          <li>Київ – Львів: від 350 грн</li>
-          <li>Київ – Одеса: від 400 грн</li>
-          <li>Львів – Харків: від 450 грн</li>
-        </ul>
-      </div>
-    </section>
+  <div class="container">
+    <h2>Ціни</h2>
+    <ul>
+      <li>Київ – Львів: від 350 грн</li>
+      <li>Київ – Одеса: від 400 грн</li>
+      <li>Львів – Харків: від 450 грн</li>
+      <li>Харків – Ужгород: від 500 грн</li>
+      <li>Івано-Франківськ – Київ: від 370 грн</li>
+      <li>Одеса – Дніпро: від 390 грн</li>
+      <li>Херсон – Львів: від 460 грн</li>
+    </ul>
+  </div>
+</section>
+
+    <section id="map" class="tab-content">
+  <div class="container">
+    <h2>Карта маршрутів Укрзалізниці</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ukrzaliznytsia_map_2019.svg/1200px-Ukrzaliznytsia_map_2019.svg.png" 
+         alt="Карта маршрутів" 
+         style="max-width: 100%; border: 1px solid #ccc; border-radius: 10px;" />
+  </div>
+</section>
+
 
     <section id="contacts" class="tab-content">
       <div class="container">
